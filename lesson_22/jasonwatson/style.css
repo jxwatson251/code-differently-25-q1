@@ -18,7 +18,6 @@ body {
     text-underline-offset: -4px;
 }
 
-/* Nav-bar */
 .header {
     display: flex;
     justify-content: space-between;
@@ -85,9 +84,6 @@ body {
     transition-duration: 0.5s;
 }
 
-/* Hero section */
-
-
 .hero-section {
     position: relative;
     display: flex;
@@ -149,7 +145,6 @@ body {
     font-weight: bold;
 }
 
-/* Programs section */
 .programs {
     display: grid;
     grid-template-columns: 1fr 1fr;
