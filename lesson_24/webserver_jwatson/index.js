@@ -13,17 +13,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Handle form submission
 app.post("/submit", (req, res) => {
-    const { name, email, message } = req.body;
+    const { firstname, lastname, email, message } = req.body;
 
 // Log the form data to the console
-    console.log('First Name: ${first name}');
-    console.log('Last Name: ${last name}');
-    console.log('Email: ${email}');
-    console.log('Message: ${message}');
+    console.log(`First Name: ${firstname}`);
+    console.log(`Last Name: ${lastname}`);
+    console.log(`Email: ${email}`);
+    console.log(`Message: ${message}`);
 
 // Send a response back to the user
     res.send(`
-        <h1>Thank you for your submission, ${name}!</h1>
+        <h1>Thank you for your submission, ${firstname}!</h1>
         <p>We have received your message and will get back to you at ${email} soon.</p>
         <a href="/">Go back to the contact form</a>
     `);

@@ -25,16 +25,16 @@
     <div class="spacer"></div><div>
         <div class="container">
 
-            <form id="contact-form" action="/contact_result.html">
+            <form id="contact-form" action="/submit" method="POST">
             <div class="row">
-            <input type="text" id="first-name" placeholder="FIRST NAME *" required><br>
-            <input type="text" id="last-name" placeholder="LAST NAME *" required><br>
+            <input type="text" name="firstname" id="first-name" placeholder="FIRST NAME *" required><br>
+            <input type="text" name="lastname" id="last-name" placeholder="LAST NAME *" required><br>
             </div>
             <div class="row">
-            <input type="text" id="phone" placeholder="PHONE *" required><br>
-            <input type="text" id="email" placeholder="EMAIL *" required><br>
+            <input type="text" name="phone" id="phone" placeholder="PHONE *" required><br>
+            <input type="text" name="email" id="email" placeholder="EMAIL *" required><br>
             </div>
-            <select id="dropdown" required>
+            <select id="dropdown" name="program" required>
                 <option value="">PROGRAM OF INTEREST*</option>
                 <option value="option1">1000 Kids Coding</option>
                 <option value="option2">Pipeline DevShop</option>
@@ -45,7 +45,7 @@
                 <option value="option7">Learn With Us</option>
                 <option value="option8">Donate/Volunteer</option>
             </select><br>
-            <textarea rows="10" cols="10" type="textbox" id="message" placeholder="MESSAGE"></textarea>
+            <textarea rows="10" cols="10" type="textbox" name="message" id="message" placeholder="MESSAGE"></textarea>
             <div class="controls">
                 <button id="sendBtn" type="submit">Send</button>
             </div>
