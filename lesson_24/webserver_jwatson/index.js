@@ -9,12 +9,7 @@ app.use(express.json());
 app.use(cors());  // Enable CORS globally
 
 //Serve static files from the 'RMillerCDclone' directory
-app.use(express.static(path.join(__dirname, 'webserver_jwatson')));
-
-// Serve the contact form at the root
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, 'webserver_jwatson'));  
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Handle form submission
 app.post("/submit", (req, res) => {
