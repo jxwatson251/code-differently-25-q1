@@ -2,6 +2,7 @@ import './ProgramList.scss';
 import React from 'react';
 
 import Program from '../program/Program';
+import { Link } from 'react-router-dom';
 
 interface Program {
   id: number;
@@ -23,7 +24,11 @@ const ProgramList: React.FC<ProgramListProps> = ({programs}) => {
           description={program.description}
         />
       ))}
+      <Link to="add-program" className="add-program-button">
+        Add Program
+      </Link>
     </ul>
+   
   );
 };
 
